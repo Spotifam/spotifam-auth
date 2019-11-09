@@ -16,7 +16,7 @@ var cookieParser = require('cookie-parser');
 var client_id = '6e17307e0d9242f4b4e4c9a13cc02aed'; // Your client id
 var client_secret = 'c1f61358584c4028b6130d228e1264c8'; // Your secret
 //var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
-var redirect_uri = 'http://spotifam.com/callback'; // Your redirect uri
+var redirect_uri = 'http://www.spotifam.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters

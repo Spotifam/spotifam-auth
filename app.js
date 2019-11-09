@@ -15,7 +15,8 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '6e17307e0d9242f4b4e4c9a13cc02aed'; // Your client id
 var client_secret = 'c1f61358584c4028b6130d228e1264c8'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+//var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = 'http://spotifam.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -104,8 +105,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        //res.redirect('http://localhost:3000/#' +
-        res.redirect('http://spotifam.com/#' +
+        res.redirect('http://localhost:3000/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token

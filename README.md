@@ -5,7 +5,7 @@ Use this in conjunction with [Spotifam Frontend](https://github.com/Spotifam/spo
 ## How to run
 1. Download this repo using `git clone` or `git pull`
 2. Run `npm install` to download current node_modules
-3. Run the server with `node app.js` to open the server on localhost:8888
+3. Run the server with `node app.js` to open the server on localhost:8000
 
 Note: do not run it with 'npm start'. This will not work
 

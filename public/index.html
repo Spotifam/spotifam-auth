@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Example of the Authorization Code flow with Spotify</title>
+    <title>Spotifam Login</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <style type="text/css">
       #login, #loggedin {
@@ -16,10 +16,10 @@
     </style>
   </head>
 
-  <body>
+  <body onload="redirectToLogin()">
     <div class="container">
       <div id="login">
-        <h1>This is an example of the Authorization Code flow</h1>
+        <h1>Logging you into Spotifam</h1>
         <a href="/login" class="btn btn-primary">Log in with Spotify</a>
       </div>
       <div id="loggedin">
@@ -136,6 +136,12 @@
           }, false);
         }
       })();
+    </script>
+
+    <script>
+    function redirectToLogin() {
+      window.location.href = "http://auth.spotifam.com/login";
+    }
     </script>
   </body>
 </html>
